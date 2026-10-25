@@ -121,7 +121,6 @@ if has appimage; then
   esac
   APPDIR="$WORK/LightCraft.AppDir"
   cp -R "$STAGE" "$APPDIR"
-  mv "$APPDIR/usr/share/doc" "$WORK/doc-unused"
   # Retain sctk-adwaita MIT attribution in the AppImage.
   install -Dm644 "$ROOT/NOTICE" "$APPDIR/usr/share/doc/lightcraft/NOTICE"
   ln -s usr/bin/lightcraft "$APPDIR/AppRun"
